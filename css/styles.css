@@ -94,7 +94,7 @@ h2, .header_line {
 	text-decoration: none;
 }
 
-.active {
+.navigation .active {
 	background-color: #6c00c4;
 	color: white;
 }
@@ -120,7 +120,7 @@ h2, .header_line {
 	color: inherit;
 }
 
-#copyright {
+.copyright {
 	text-align: center;
 	clear: left;
 }
@@ -135,6 +135,15 @@ h2, .header_line {
 
 .caption {
 	padding-bottom: 30px;
+}
+
+.dark-caption {
+	color: black;
+}
+
+.carousel-background {
+	background-color: white;
+	border: black 2px solid;
 }
 
 
