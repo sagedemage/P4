@@ -7,8 +7,8 @@ html {
 	*/
 	min-width: 100%;
 	min-height: 100%;
-	/*Sets background color 
-	for the whole page*/
+	/* Sets background color
+	for the whole page */
 	background-color: #cec9eb;
 }
 
@@ -66,22 +66,26 @@ h2, .header_line {
 	/*min-height: 1em;*/
 	list-style-type: none;
 	text-decoration: none;
-	text-align: center;
 	font-size: 1.2em;
 	padding: 0;
 	margin: 0;
+	color: white;
 }
 .navigation li {
 	float: left;
-	width: 7em;
 	color: white;
 }
 .navigation li a {
-	color: white;
+	color: inherit;
 	display: block;
 	padding-top: 0.3em;
 	padding-bottom: 0.3em;
 	text-decoration: none;
+	padding-right: 20px;
+	padding-left: 20px;
+	width: inherit;
+	float: left;
+	text-align: center;
 }
 
 .navigation a:hover {
@@ -95,20 +99,27 @@ h2, .header_line {
 	color: white;
 }
 
-/*#debian_logo {
-	display: block;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+.submenu {
 	float: left;
-	margin-right: auto;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	left: 0;
+	display: none;
+	background-color: #303030;
+	width: 100%;
+	position: absolute;
+	top: 125px;
 }
 
-#gnome_logo {
+.dropbtn:hover .submenu {
 	display: block;
-	float: left;
-}*/
+}
+.navigation .subnavbtn {
+	background-color: inherit;
+	color: inherit;
+}
+
 #copyright {
 	text-align: center;
 	clear: left;
@@ -126,12 +137,4 @@ h2, .header_line {
 	padding-bottom: 30px;
 }
 
-/*.icon-link {
-	float: left;
-	margin-left: 0.3em;
-}
 
-.icon-link:hover {
-	background-color: white;
-	border-radius: 50%;
-}*/
