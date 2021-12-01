@@ -146,4 +146,12 @@ h2, .header_line {
 	border: black 2px solid;
 }
 
+.scale_image {
+	width: 50%;
+}
+
+.columns {
+	column-count: 2;
+}
+
 
