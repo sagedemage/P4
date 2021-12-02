@@ -152,6 +152,7 @@ h2, .header_line {
 
 .columns {
 	column-count: 2;
+	margin-bottom: 50px;
 }
 
 .set-left {
