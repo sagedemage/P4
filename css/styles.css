@@ -9,7 +9,7 @@ html {
 	min-height: 100%;
 	/* Sets background color
 	for the whole page */
-	background-color: #cec9eb;
+	background-color: #c4c5ff;
 }
 
 .content {
@@ -31,13 +31,13 @@ main {
 }
 
 main, footer {
-	background-color: #cec9eb;
+	background-color: #c4c5ff;
 }
 
 header {
 	padding-top: 1em;
 	padding-bottom: 1em;
-	background-image: linear-gradient(90deg, #d952ff 10%, #6773ff 60%, #7259ff 90%);
+	background-image: linear-gradient(115deg, #ff7a7a 5%, #fe92ff 40%, #7a8fff 90%);
 }
 
 footer {
@@ -56,7 +56,7 @@ h2, .header_line {
 	padding-bottom: 3px;
 }
 
-.navigation {
+#nav_menu {
 	background-color: #303030;
 	/*padding-top: 0.5em;
 	padding-bottom: 0.5em;*/
@@ -71,11 +71,11 @@ h2, .header_line {
 	margin: 0;
 	color: white;
 }
-.navigation li {
+#nav_menu li {
 	float: left;
 	color: white;
 }
-.navigation li a {
+#nav_menu li a {
 	color: inherit;
 	display: block;
 	padding-top: 0.3em;
@@ -88,18 +88,18 @@ h2, .header_line {
 	text-align: center;
 }
 
-.navigation a:hover {
+#nav_menu a:hover {
 	background-color: black;
 	color: white;
 	text-decoration: none;
 }
 
-.navigation .active {
+#nav_menu .active {
 	background-color: #6c00c4;
 	color: white;
 }
 
-.submenu {
+#nav_menu .submenu {
 	float: left;
 	list-style-type: none;
 	padding: 0;
@@ -112,10 +112,10 @@ h2, .header_line {
 	top: 125px;
 }
 
-.dropbtn:hover .submenu {
+#nav_menu .dropbtn:hover .submenu {
 	display: block;
 }
-.navigation .subnavbtn {
+#nav_menu .subnavbtn {
 	background-color: inherit;
 	color: inherit;
 }
@@ -152,6 +152,16 @@ h2, .header_line {
 
 .columns {
 	column-count: 2;
+}
+
+.set-left {
+	float: right;
+	width: 40%;
+	text-align: center;
+}
+
+#mac_air {
+	width: 80%;
 }
 
 

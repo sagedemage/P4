@@ -16,19 +16,36 @@
 		<!-- Linking my stylesheet file to this html page -->
 		<link rel="stylesheet" href="../css/styles.css">
 		<!-- Bootstrap 4 CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- JQuery CDN by Google -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<!-- Slick nav script -->
+		<script src="../js/jquery.slicknav.min.js"></script>
+		<!-- Slicknav CSS -->
+		<link rel="stylesheet" href="../css/slicknav.css">
 	</head>
 	<body>
+	<!-- Slick Nav script -->
+		<script>
+			$(function(){
+				$('#nav_menu').slicknav({
+					prependTo: '#mobile_menu'
+				});
+			});
+		</script>
 		<!-- The Website Title -->
 		<header>
 			<h1> CPU Processors </h1>
 		</header>
+		<!-- Mobile Menu -->
+		<nav id ="mobile_menu"></nav>
 		<!-- Navigation Bar -->
-		<ul class="navigation">
+		<ul id="nav_menu">
 			<li><a href="../index.html"> Home </a></li>
-			<li class="dropbtn"><a href="m1_mac.html"> M1 Mac &#8595;</a>
+			<li class="dropbtn"><a> M1 Mac </a>
 				<ul class="submenu">
-					<li><a href="m1_mac.html#intro">Introduction</a></li>
+					<li><a href="m1_mac.html#about">About</a></li>
 					<li><a href="m1_mac.html#mac">Why M1 Mac?</a></li>
 					<li><a href="m1_mac.html#problems">The Problems</a></li>
 					<li><a href="m1_mac.html#closing">Closing</a></li>

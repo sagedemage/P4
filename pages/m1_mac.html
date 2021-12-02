@@ -16,20 +16,37 @@
 		<!-- Linking my stylesheet file to this html page -->
 		<link rel="stylesheet" href="../css/styles.css">
 		<!-- Bootstrap 4 CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- JQuery CDN by Google -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<!-- Slick nav script -->
+		<script src="../js/jquery.slicknav.min.js"></script>
+		<!-- Slicknav CSS -->
+		<link rel="stylesheet" href="../css/slicknav.css">
 	</head>
 	<body>
+		<!-- Slick Nav script -->
+		<script>
+			$(function(){
+				$('#nav_menu').slicknav({
+					prependTo: '#mobile_menu'
+				});
+			});
+		</script>
 		<!-- The Website Title -->
 		<header>
 			<h1> CPU Processors </h1>
 		</header>
+		<!-- Mobile Menu -->
+		<nav id ="mobile_menu"></nav>
 		<!-- Navigation Bar -->
-		<ul class="navigation">
+		<ul id="nav_menu">
 			<li><a href="../index.html"> Home </a></li>
 			<!-- <li><a class="active" href="m1_mac.html"> M1 Mac </a></li> -->
-			<li class="dropbtn"><a class="active" href="m1_mac.html"> M1 Mac &#8595;</a>
+			<li class="dropbtn"><a class="active"> M1 Mac </a>
 				<ul class="submenu">
-					<li><a href="#intro">Introduction</a></li>
+					<li><a href="#about">About</a></li>
 					<li><a href="#mac">Why M1 Mac?</a></li>
 					<li><a href="#problems">The Problems</a></li>
 					<li><a href="#closing">Closing</a></li>
@@ -42,12 +59,10 @@
 		<main>
 			<!-- Article Content -->
 			<div class="content">
-				<h2> M1 Mac </h2>
-				<figure>
-					<img class="scale_image" src="../images/macbook_air.jpg" alt="M1 Mac">
-					<figcaption> Image by MIKI Yoshihito via <a href="https://www.flickr.com/photos/mujitra/51425901443/in/photolist-2mmkbRa-4pwCJs-4pwD11-4psAPX-4pwDdy-4phNKt-4psB3T-4pwDk3-4psAgP-4pwD49-4pwDhA-4pt7fa-4psALa-4pwCXN-a6GReP-aEUeME-axiaEP-4px9n3-5DobH7-92u5MD-8NNVTx-4mmnWD-4pHu7D-axkRoh-6K6msH-c1BCcu-4pwCvo-5h63Ng-4rXMuz-c1BBJo-91iU42-4ps3NN-4HvwaG-ToZT8s-c1BBS7-4qMc57-4qVyeg-8P1rgM-91mZc3-4pHu6M-4toc3U-8NS341-4pHu5V-8PbmZQ-c1BC49-91iPjx-91mY3Q-4m6Uar-6qf1F5-24dkfy4">Flickr</a></figcaption>
-				</figure>
-				<h3 id="intro"> Introduction </h3>
+				<h2 id="about"> M1 Mac </h2>
+				<div class="set-left">
+					<img id="mac_air" src="../images/macbook_air.jpg" alt="M1 Mac"><br>Image by MIKI Yoshihito via <a href="https://www.flickr.com/photos/mujitra/51425901443/in/photolist-2mmkbRa-4pwCJs-4pwD11-4psAPX-4pwDdy-4phNKt-4psB3T-4pwDk3-4psAgP-4pwD49-4pwDhA-4pt7fa-4psALa-4pwCXN-a6GReP-aEUeME-axiaEP-4px9n3-5DobH7-92u5MD-8NNVTx-4mmnWD-4pHu7D-axkRoh-6K6msH-c1BCcu-4pwCvo-5h63Ng-4rXMuz-c1BBJo-91iU42-4ps3NN-4HvwaG-ToZT8s-c1BBS7-4qMc57-4qVyeg-8P1rgM-91mZc3-4pHu6M-4toc3U-8NS341-4pHu5V-8PbmZQ-c1BC49-91iPjx-91mY3Q-4m6Uar-6qf1F5-24dkfy4">Flickr</a>
+				</div>
 				<p>
 					Apple decided to ship their computers with an ARM CPU called the M1 chip.
 					I found this interesting is because Apple is one of the few companies pushing hard for ARM adoption.
@@ -74,7 +89,7 @@
 					CLI programs like docker, and python and managing your files.
 					However, programmers and designers will probably like it if they are willing to buy for it.
 				</p>
-				<h3> Referneces </h3>
+				<h4> References </h4>
 				<a href="https://www.macrumors.com/guide/m1/"> Apple M1 Chip: Everything You Need to Know by Juli Clover </a>
 
 			</div>
